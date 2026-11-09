@@ -1,0 +1,17 @@
+{
+  "model": "facebook/m2m100_418M",
+  "fine_tuned": false,
+  "runtime": "CTranslate2 FP16",
+  "hardware": "NVIDIA RTX 5060 Ti 16 GB",
+  "evaluation_note": "Licensed held-out split. Final metrics use 500 examples per language; streaming metrics use the first 50 and are not directly paired comparisons.",
+  "examples": {
+    "zh": {"final_sacrebleu": 20.8413, "final_chrf2pp": 46.4586, "streaming_chrf2pp": 48.1667},
+    "es": {"final_sacrebleu": 43.2768, "final_chrf2pp": 64.1748, "streaming_chrf2pp": 62.4636},
+    "fr": {"final_sacrebleu": 37.4484, "final_chrf2pp": 60.0990, "streaming_chrf2pp": 60.5496},
+    "ar": {"final_sacrebleu": 27.4019, "final_chrf2pp": 52.7251, "streaming_chrf2pp": 54.2133}
+  },
+  "loopback_smoke_latency_ms": {
+    "four_streams": {"updates": 40, "server_p50": 41.7275, "server_p95": 53.3314},
+    "eight_streams": {"updates": 80, "server_p50": 59.3220, "server_p95": 89.4808}
+  }
+}

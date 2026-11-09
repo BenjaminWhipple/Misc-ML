@@ -1,0 +1,13 @@
+name: translate-server
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - cuda-version=12.9
+  - pip:
+      - ctranslate2>=4.8,<5
+      - sentencepiece>=0.2,<1
+      - transformers>=4.48,<6
+

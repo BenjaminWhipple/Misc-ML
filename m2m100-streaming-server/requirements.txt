@@ -1,0 +1,6 @@
+# Versions used for the included benchmark: CTranslate2 4.8.5,
+# SentencePiece 0.2.1, and Transformers 5.19.0.
+ctranslate2>=4.8,<5
+sentencepiece>=0.2,<1
+transformers>=4.48,<6
+
